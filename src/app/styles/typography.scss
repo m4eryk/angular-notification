@@ -1,0 +1,26 @@
+$font-size: (
+  0: '12px',
+  5: '14px',
+  10: '16px',
+  15: '18px',
+  20: '20px',
+  25: '24px',
+  30: '28px',
+  35: '36px',
+);
+
+$line-height: (
+  0: '14px',
+  5: '18px',
+  10: '20px',
+  15: '22px',
+  20: '24px',
+  25: '26px',
+  30: '30px',
+  35: '40px',
+);
+
+@mixin typography($size) {
+  font-size: map-get($font-size, $size);
+  line-height: map-get($line-height, $size);
+}

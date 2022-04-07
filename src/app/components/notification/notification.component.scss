@@ -1,0 +1,31 @@
+@import './src/app/styles/colors';
+@import './src/app/styles/typography';
+
+.notification {
+  width: 100%;
+  height: 60px;
+  padding: 20px 36px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  background: $redLight1;
+
+  @include typography(5);
+
+  &__message {
+    &-text {
+
+    }
+
+    &-icon {
+
+    }
+  }
+
+  &__action {
+
+  }
+}
