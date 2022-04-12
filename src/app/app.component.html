@@ -1,4 +1,15 @@
 <div class='toolbar' role='banner'>
-  <app-notification></app-notification>
+    <app-notification
+            text='Подпишите заявление у офис менеджера. Для заказа еды в приложении подпишите согласие на удержание из заработной'
+    >
+    </app-notification>
+
+    <div *ngIf='message;'>
+        <h1>{{ message.title }}</h1>
+        <h2>{{ message.body }}</h2>
+    </div>
+    <div *ngIf='!message;'>
+        No Message Arrived
+    </div>
 </div>
 
